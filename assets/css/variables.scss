@@ -1,0 +1,46 @@
+/*-----------------------Background Color------------------------------------*/
+$primary: #019ffc;
+
+$secondry: #323c48;
+
+$secondry-light: #f2f4f8;
+
+$bg-light: #f8f8f8;
+
+$white: #fff;
+
+$success: #66d203;
+
+$red: #e66060;
+
+$yellow: #daa400;
+
+$warning: #f7941d;
+
+/*-----------------------Text-Color------------------------------------*/
+$body-color: #676767;
+
+$dark: #333333;
+
+/*-----------------------Font Family------------------------------------*/
+$body-font: 'Roboto', sans-serif;
+
+$Montserrat: 'Montserrat', sans-serif;
+
+$Lato: 'Lato', sans-serif;
+
+/*-----------------------Border Color------------------------------------*/
+$border-light: #f2f2f2;
+
+$border-primary-light: #3a64f2;
+
+$border-primary-dark: #2f55bb;
+/*-----------------------Line Height------------------------------------*/
+$body-line-height: 1.75rem;
+
+/*-----------------------Font Family Import------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');

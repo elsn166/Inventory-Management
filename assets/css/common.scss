@@ -1,0 +1,362 @@
+body{
+    background: $secondry-light;
+    margin: 0px;
+    padding: 0px;
+    color: $body-color;
+    font-family: $body-font;
+    font-size: 0.875rem;
+    line-height: $body-line-height;
+    word-wrap: break-word;
+}
+a{
+    text-decoration: none;
+    &:hover, &:focus{
+        color: inherit;
+        text-decoration: none;
+        outline: none;
+    }
+}
+/*======================== Font Style Css ===============================*/
+h1,h2,h3,h4,h5,h6{
+    color: $dark;
+    margin: 0 0 18px;
+    line-height: $body-line-height;
+    font-family: $Montserrat;
+    font-weight: 500;
+}
+
+/*======================== Font-Family Css ===============================*/
+.eagle-font-lato{ font-family: $body-font;}
+
+.Montserrat{ font-family: $Montserrat;}
+
+.lato{ font-family: $Lato;}
+
+/*======================== Font-Color Css ===============================*/
+.eagle-primary, .text-primary{ color: $primary !important;}
+
+.eagle-dark{ color: $dark;}
+
+.eagle-light{ color: $body-color;}
+
+.eagle-danger{ color: $red;}
+
+.eagle-success{ color: $success;}
+
+.eagle-warning{ color: $warning;}
+
+.text-muted{  color: #b5b5b5 !important; }
+
+.text-dark{  color: #000 !important; }
+
+/*======================== Background Color Css ===============================*/
+.eagle-bg-primary{ background-color: $primary;}
+
+.eagle-bg-light{ background-color: $bg-light;}
+
+.eagle-bg-secondry{ background-color: $secondry;}
+
+.eagle-bg-secondry-light{ background-color: $secondry-light;}
+
+.eagle-bg-success{ background-color: $success;}
+
+.eagle-bg-dark{ background-color: $dark;}
+
+.eagle-bg-warning{ background-color: $warning;}
+
+.bg-facebook{ background-color: #4b64a6; }
+
+.bg-twitter{ background-color: #0dace3; }
+/*======================== Button Css===============================*/
+.btn{
+    font-size: 12px;
+    &:focus, &:active{
+        box-shadow: none !important;
+    }
+}
+.btn-primary{
+    background-color: $primary;
+    border-color: $primary;
+}
+.btn-outline-primary{
+    border-color: $primary;
+    color: $primary;
+}
+.btn-outline-primary, .btn-primary{
+    &:hover, &:active, &:focus{
+        background-color: $primary !important;
+        border-color: $primary !important;
+        color: $white !important;
+    }
+}
+.btn-success, .btn-info, .btn-danger, .btn-warning, .btn-dark, .btn-secondary{
+    &:hover, &:active, &:focus{
+        color: $white !important;
+    }
+}
+.btn-success{
+    border-color: $success;
+    background-color: $success;
+    &:hover, &:active,  &:focus{
+        border-color: $success !important;
+        background-color: $success !important;
+    }
+}
+.btn-white{
+    border-color: $white;
+    background-color: $white;
+    color: $dark;
+    &:hover, &:active, &:focus{
+        border-color: $white;
+        background-color: $white;
+        color: $dark !important;
+    }
+}
+.btn-outline-light{
+    color: $body-color;
+    border-color: $border-light;
+    &:hover, &:active, &:focus{
+        background-color: $primary !important;
+        border-color: $primary !important;
+        color: $white !important;
+    }
+}
+.btn-link{
+    color: $primary !important; 
+}
+
+.btn-group {
+    .drop-btn{
+        width: 22px;
+        height: 22px;
+        line-height: 23px;
+        font-size: 18px;
+    }
+    &.show{
+        display: inline-flex !important;
+    }
+}
+
+/*======================== Buttons Size===============================*/
+.btn-xs{     
+    padding: 0rem 1rem;
+    line-height: 2rem;
+}
+.btn-sm{ 
+    padding: 0rem 1.5rem;
+    line-height: 2.5rem;
+}
+.btn-default {
+    padding: 0rem 2rem;
+    line-height: 2.5rem;
+}
+.btn-md {
+    line-height: 3rem;
+    padding: 0rem 2rem;
+}
+.btn-lg{ 
+    padding: 0rem 2.5rem;
+    line-height: 3.5rem;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+/*======================== Rounded-Circle Css===============================*/
+.eagle-rounded-circle-50{ border-radius: 50px !important;}
+
+.border-width-2{ border-width: 2px !important; }
+
+/*======================== Border Color Css===============================*/
+.eagle-border-light{ border-color: $border-light !important;}
+
+.eagle-border-primary{ border-color: $primary;}
+
+.eagle-divider{  border-bottom: solid 1px $border-light; }
+
+/*======================== line-height Css===============================*/
+.eagle-line-height-1{ line-height: 1 !important; }
+
+.eagle-line-height-1_5{ line-height: 1.5 !important; }
+
+.eagle-line-height-1_8{ line-height: 1.8 !important; }
+
+.eagle-line-height-2{ line-height: 2 !important; }
+
+.eagle-line-height-2_5{ line-height: 2.5 !important; }
+
+.eagle-line-height-3{ line-height: 3 !important; }
+
+.eagle-line-height-3_5{ line-height: 3.5 !important; }
+
+.eagle-line-height-4{ line-height: 4 !important; }
+
+/*======================== Social Icon Color Css===============================*/
+.facebook{
+    color: #3b5999;
+}
+.twitter{
+    color: #55acee;
+}
+.linkedin{
+    color: #0077b5;
+}
+.google{
+    color: #dd4b39;
+}
+.pintrest{
+    color: #bd081c;
+}
+
+/*======================== Page Custom Css ===============================*/
+.btn-search{
+    right: 15px;
+    top: 10px;
+}
+.btn-search-left{
+    left: 15px;
+    top: 10px;
+}
+.emoticon{
+    left:  15px;
+    top: 8px;
+}
+
+/*======================== Checkbox & Radio Css ===============================*/
+[type=checkbox] + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer; }
+[type=checkbox] {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden; }
+
+[type=checkbox]+label:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #848484;
+}
+[type=checkbox]:checked+label:before {
+    content: "\f374";
+    position: absolute;
+    font-family: 'Ionicons' !important;
+    border: 0;
+    color: $primary;
+    line-height: 1;
+}
+
+/*========================  Pagination Css ===============================*/
+.pagination{
+    .page-item.active .page-link{
+        background-color: $primary;
+        border-color: $primary;
+    }
+    .page-link{ 
+        color: $dark;
+        border-color: $border-light;
+    }
+}
+
+/*=========== Blockquote ==============*/
+.blockquote{
+    padding: 0 9px;  
+    &:before {
+      content: "\f10d";
+      font: normal normal normal 14px/1 FontAwesome;
+      position: absolute;
+      left: 8px;
+      font-size: 30px;
+      color: #fff; 
+    }
+    &:before {
+
+    }
+}
+/*======================== background-image-maker & Gradient Css ===============================*/
+.background-image-maker {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: $dark;
+}
+.gradient-lr:before {
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+}
+.gradient:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/*======================== Form Css ===============================*/
+.form-control {
+    height: 42px;
+    border-radius: 0px;
+    border-color: $border-light;
+    color: $body-color;
+    transition: .2s ease-out; 
+    padding: .5rem 1.2rem;
+    font-size: 14px;
+    &:focus{
+        border-color: $border-light;
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  transition: all 0.3s ease; }
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+textarea.form-control{ 
+    height: 115px !important;
+}
+.form-control-lg{
+    padding: .5rem 1rem !important;
+    font-size: 1.25rem !important;
+}
+.form-control-sm{
+    height: 32px !important;
+}
+select[multiple], select[size] {
+    height: auto;
+}
+select.form-control:not([size]):not([multiple]){
+    -webkit-appearance: none;
+    background: url(../images/arrow.png) no-repeat 96%;
+    cursor: pointer;
+}
+
+/*======================== Badge Css ===============================*/
+.badge-danger{
+    background-color: $red;
+}
+.badge-success{
+    background-color: $success;
+}
+.badge-primary{
+    background-color: $primary;
+}
+.badge-warning{
+    background-color: $yellow;
+}

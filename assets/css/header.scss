@@ -1,0 +1,78 @@
+.dropdown-menu{
+    box-shadow: 0px 0px 15px 0 rgba(0,0,0,.15);
+    right: 0;
+    left: auto !important;
+    .dropdown-item{
+        border-bottom:  solid 1px $border-light;
+        color: $body-color;
+        padding: 10px 15px;
+        font-size: 14px;
+       
+        &:hover, &:focus, &:active{
+            background-color: $secondry-light;
+        }
+    }
+     li:last-child .dropdown-item{
+            border: 0px;
+        }
+}
+.dropdown{
+    > .dropdown-menu
+    {
+        display: block;
+        opacity: 1;
+        -webkit-transform: translate(0, 15px);
+        transform: translate(0, 15px);
+        transition: all 0.15s;
+        visibility: hidden;
+    }
+    &:hover{
+        > .dropdown-menu{
+            visibility: visible;
+            -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+        }
+    }
+}
+/*************************** SideBar ***************************************/
+.wrapper {
+    #sidebar {
+        min-width: 270px;
+        max-width: 270px;
+        transition: all 0.5s;
+        position: fixed;
+        left: 0;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        a{
+            padding: 12px 20px;
+            display: block;
+            color: $dark;
+            font-family: $Lato;
+        }
+         ul li ul li a{
+             padding-left: 40px;
+        }
+        .slimScrollBar{
+            background: rgba(0, 0, 0, 0.9) !important;
+        }
+        .site-logo {
+            min-width: 270px;
+            min-height: 72px;
+            border-bottom: solid 1px $border-light;
+            margin-bottom: 15px;
+        }
+         .metismenu .collapse.in{
+            display: block;
+         }
+    }
+}
+#sidebar.active {
+    margin-left: -270px;
+}
+#header-fix{
+    &.active{
+        box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.08);
+    }
+}

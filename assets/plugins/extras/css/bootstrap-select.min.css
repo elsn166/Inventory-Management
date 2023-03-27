@@ -1,0 +1,22 @@
+.bootstrap-select .selectpicker{
+    border: 0px;
+    width: 100px;
+}
+.bootstrap-select .selectpicker:focus{
+    outline: 0;
+}
+.selectpicker option:hover {
+    color: white;
+    background: #000;
+}
+.bootstrap-select .dropdown-toggle::after, .bootstrap-select .dropdown-menu{
+    display: none !important;
+}
+.bootstrap-select .btn-default{ 
+    padding: 0px;
+    background: transparent;
+}
+.bootstrap-select .filter-option{
+    font-size: 0px;
+    margin-right: 5px;
+}
